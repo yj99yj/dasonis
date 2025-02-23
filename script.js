@@ -1,4 +1,3 @@
-
 // 팝업 열기 버튼
 const openPopupBtn = document.getElementById('openPopupBtn');
 const popup = document.getElementById('popup');
@@ -21,13 +20,11 @@ window.onclick = function(event) {
   }
 };
 
-
-// 메뉴 열고 닫기 함수
+// 메뉴 열고 닫기 함수 (필요 없으면 삭제 가능)
 function toggleMenu() {
+  // 네비게이션 메뉴 요소 가져오기
   var navbar = document.getElementById("navbar");
-  var links = navbar.getElementsByTagName("a");
 
-  for (var i = 0; i < links.length; i++) {
-    links[i].classList.toggle("active");
-  }
+
 }
+

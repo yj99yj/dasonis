@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /* 기본 설정 */
 * {
     margin: 0;
@@ -328,13 +331,13 @@ footer .text-center {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px auto;
-    max-width: 1000px;
+    max-width: 1300px;
 }
 
 /* 각 카드가 2개씩 한 줄에 배치될 수 있도록 설정 */
 .product-col-4 {
     flex: 0 0 48%; /* 각 카드가 한 줄에 2개씩 차지하도록 48%로 설정 */
-    margin-bottom: 20px; /* 카드 간 간격 */
+    margin-bottom: 30px; /* 카드 간 간격 */
 }
 
 /* 카드 스타일 설정 */
@@ -345,9 +348,10 @@ footer .text-center {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    height: 280px;  /* 카드 높이 고정 (전체적으로 조금 줄임) */
+    height: 380px;  /* 카드 높이 고정 (전체적으로 조금 줄임) */
     width: 100%;
-    font-size: 1.2rem; /* 텍스트 크기 전체적으로 축소 */
+    font-size: 1.5rem; /* 텍스트 크기 전체적으로 축소 */
+    margin: 10%;
 }
 
 /* 이미지 스타일 (모든 이미지 크기 동일하게 설정) */
@@ -360,7 +364,7 @@ footer .text-center {
 
 /* 카드 내용 영역 스타일 */
 .product-card-body {
-    padding: 10px;
+    padding: 20px;
     flex-grow: 1; /* 내용 영역이 남은 공간을 차지하도록 설정 */
     display: flex;
     flex-direction: column;
@@ -369,19 +373,10 @@ footer .text-center {
 
 /* 가격 텍스트 스타일 */
 .product-price {
-    font-size: 1rem; /* 가격 텍스트 크기 축소 */
+    font-size: 1.1rem; /* 가격 텍스트 크기 축소 */
     font-weight: bold;
     color: #333;
     font-family: 'Arial', sans-serif; /* 기본 폰트 설정 */
-    margin-bottom: 6px;
-}
-
-/* 설명 텍스트 스타일 */
-.product-description {
-    font-size: 0.9rem; /* 설명 텍스트 크기 축소 */
-    color: #666;
-    line-height: 1.5;
-    font-family: 'Georgia', serif; /* 설명용 폰트 설정 */
 }
 
 /* 반응형 디자인: 모바일에서 한 줄에 하나씩 보이게 */
@@ -403,10 +398,6 @@ footer .text-center {
     }
 }
 
-
-
-
-  
 
   .goods-container {
     display: flex;
@@ -432,7 +423,7 @@ footer .text-center {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 0 auto; /* 카드 중앙 정렬 */
+    margin: 10% auto; /* 카드 중앙 정렬 */
 }
 
 .goods-img-top {
@@ -537,4 +528,3 @@ footer .text-center {
     margin: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');

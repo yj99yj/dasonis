@@ -1,131 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="logo.png" type="image/png">
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dasonis</title>
-</head>
-<body>
-    <!-- 네비게이션 바 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="logo.png" type="image/png" />
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Dasonis</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="kimbab.html">김밥</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ramen.html">컵라면</a></li>
-                    <li class="nav-item"><a class="nav-link" href="beverage.html">음료수</a></li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Dasonis</a>
+        <!-- 햄버거 메뉴 버튼 -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- 메뉴 항목들 -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="kimbab.html">김밥</a></li>
+            <li class="nav-item"><a class="nav-link" href="ramen.html">라면</a></li>
+            <li class="nav-item"><a class="nav-link" href="beverage.html">음료수</a></li>
+          </ul>
         </div>
+      </div>
     </nav>
+    
 
     <div class="ramen-container">
-        <!-- 첫 번째 행 -->
-        <div class="ramen-row">
-            <div class="ramen-item">
-                <div class="ramen-card">
-                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA5MjZfMjg2%2FMDAxNzI3MzM1ODIxOTkw.u-Gn_QX_RcE4ax5FClgIqmaAuyGKlX1ygQn81jobez0g.WZRWr0fgJB47R61AtLGs7K-YDzxrPtWn2DoP7qbnUcMg.JPEG%2F20240920_133257.jpg" class="ramen-img-top" alt="컵라면">
-                    <div class="ramen-card-body">
-                        <p class="ramen-price">작은 컵라면 1,500원</p>
-                        <p class="ramen-description">새우탕,  참깨라면, 튀김우동,<br> 육개장, 김치사발면</p>
-                    </div>
-                </div>
+      <!-- 첫 번째 행 -->
+      <div class="ramen-row">
+        <div class="ramen-item">
+          <div class="ramen-card">
+            <img
+              src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA5MjZfMjg2%2FMDAxNzI3MzM1ODIxOTkw.u-Gn_QX_RcE4ax5FClgIqmaAuyGKlX1ygQn81jobez0g.WZRWr0fgJB47R61AtLGs7K-YDzxrPtWn2DoP7qbnUcMg.JPEG%2F20240920_133257.jpg"
+              class="ramen-img-top"
+              alt="컵라면"
+            />
+            <div class="ramen-card-body">
+              <p class="ramen-price">작은 컵라면 1,500원</p>
+              <p class="ramen-description">
+                새우탕, 참깨라면, 튀김우동,<br />
+                육개장, 김치사발면
+              </p>
             </div>
-            <div class="ramen-item">
-                <div class="ramen-card">
-                    <div class="ramen-images">
-                        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA5MjZfMjM0%2FMDAxNzI3MzM2MDcxNjk1.FvUvOMbjbbHr66wJ5jw1DCS3iVYUCWhhQYSXEnEEtmUg.f2LGLMXnPOrH3y1raItTPQfmQ11zjL19WP3miLIR7pAg.JPEG%2F20240920_133623.jpg" class="ramen-img-small" alt="즉석석">
-                        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA5MjZfMTgy%2FMDAxNzI3MzM1OTI4MTQ2.v1j5R-Y-URwT_1V0iDZJ3ekL_EUfecTkHGAUQt3iiGIg.MWymthbqJwuZEmB8FbazIIVm_owrPYMAARNQrP5Extkg.JPEG%2F20240920_133305.jpg" class="ramen-img-small" alt="즉석석">
-                    </div>
-                    <div class="ramen-card-body">
-                        <p class="ramen-price">셀프라면</p>
-                        <p class="ramen-description">진라면(순한맛) 4,000원, 짜파게티 4,000원, 신라면 4,000원<br> 멸치 칼국수 4,500원, 진짬뽕 4,500원, 달걀추가 500원</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="ramen-item">
+          <div class="ramen-card">
+            <div class="ramen-images">
+              <img
+                src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA5MjZfMjM0%2FMDAxNzI3MzM2MDcxNjk1.FvUvOMbjbbHr66wJ5jw1DCS3iVYUCWhhQYSXEnEEtmUg.f2LGLMXnPOrH3y1raItTPQfmQ11zjL19WP3miLIR7pAg.JPEG%2F20240920_133623.jpg"
+                class="ramen-img-small"
+                alt="즉석석"
+              />
+              <img
+                src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA5MjZfMTgy%2FMDAxNzI3MzM1OTI4MTQ2.v1j5R-Y-URwT_1V0iDZJ3ekL_EUfecTkHGAUQt3iiGIg.MWymthbqJwuZEmB8FbazIIVm_owrPYMAARNQrP5Extkg.JPEG%2F20240920_133305.jpg"
+                class="ramen-img-small"
+                alt="즉석석"
+              />
+            </div>
+            <div class="ramen-card-body">
+              <p class="ramen-price">셀프라면</p>
+              <p class="ramen-description">
+                진라면(순한맛) 4,000원, 짜파게티 4,000원, 신라면 4,000원<br />
+                멸치 칼국수 4,500원, 진짬뽕 4,500원, 달걀추가 500원
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
-    
-      
+
     <footer class="text-white text-center text-lg-start bg-dark">
-        <!-- Grid container -->
-        <div class="footerbg p-4">
-            <!-- Grid row -->
-            <div class="row mt-4">
-                <!-- Grid column -->
-                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase mb-4">다소니's</h5>
-                    <p>
-                        다소니's(다소니스)는 사랑하는 사람이라는 의미가 있는 순우리말 다소니와 영어의 소유격 's를 조합해 만든 상호명입니다. 
-                        사랑하는 사람의 밥을 만든다는 생각으로 김밥을 만듭니다.
-                    </p>
-    
-                    <div class="mt-4"> 
-                        <a href="#" class="btn btn-floating btn-light btn-lg"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="btn btn-floating btn-light btn-lg"><i class="fab fa-threads">Threads</i></a>
-                    </div>
-                </div>
-                <!-- Grid column -->
-    
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                <ul class="fa-ul" style="margin-left: 1.65em;">
-                    <li class="mb-3">
-                        <p><i class="fas fa-home"></i> 서울 영등포구 선유서로 67 상가 1층 127호</p>
-                    </li>
-                    <li class="mb-3">
-                      <p><i class="fas fa-phone"></i> 0507-1313-7704</p>
-                    </li>
-                </ul>
+      <!-- Grid container -->
+      <div class="footerbg p-4">
+        <!-- Grid row -->
+        <div class="row mt-4">
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">다소니's</h5>
+            <p>
+              다소니's(다소니스)는 사랑하는 사람이라는 의미가 있는 순우리말
+              다소니와 영어의 소유격 's를 조합해 만든 상호명입니다. 사랑하는
+              사람의 밥을 만든다는 생각으로 김밥을 만듭니다.
+            </p>
+
+            <div class="mt-4">
+              <a href="https://www.instagram.com/dasonis_kimbap" class="btn btn-floating btn-light btn-lg"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.threads.net/@dasonis_kimbap" class="btn btn-floating btn-light btn-lg"
+                ><i class="fab fa-threads">Threads</i></a
+              >
             </div>
-    
-                <!-- Grid column -->
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase mb-4">Opening hours</h5>
-    
-                    <table class="table text-center text-white">
-                        <tbody class="fw-normal">
-                            <tr>
-                                <td>월 - 수:</td>
-                                <td>10am - 8pm</td>
-                            </tr>
-                            <tr>
-                                <td>금 - 토:</td>
-                                <td>10am - 8pm</td>
-                            </tr>
-                            <tr>
-                                <td>휴무일:</td>
-                                <td>매주 목, 매주 일</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!-- Grid column -->
-            </div>
-            <!-- Grid row -->
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <ul class="fa-ul" style="margin-left: 1.65em">
+              <li class="mb-3">
+                <p>
+                  <i class="fas fa-home"></i> 서울 영등포구 선유서로 67 상가 1층
+                  127호
+                </p>
+              </li>
+              <li class="mb-3">
+                <p><i class="fas fa-phone"></i> 0507-1313-7704</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+            <table class="table text-center text-white">
+              <tbody class="fw-normal">
+                <tr>
+                  <td>월 - 수:</td>
+                  <td>10am - 8pm</td>
+                </tr>
+                <tr>
+                  <td>금 - 토:</td>
+                  <td>10am - 8pm</td>
+                </tr>
+                <tr>
+                  <td>휴무일:</td>
+                  <td>매주 목, 매주 일</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Grid column -->
         </div>
-        <!-- Grid container -->
-    
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            <p>&copy; 2025 Dasonis. All Rights Reserved.</p>
-        </div>
-        <!-- Copyright -->
+        <!-- Grid row -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        <p>&copy; 2025 Dasonis. All Rights Reserved.</p>
+      </div>
+      <!-- Copyright -->
     </footer>
-    
-  
-  
-      <script src="script.js"></script>
-</body>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
