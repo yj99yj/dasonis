@@ -20,3 +20,14 @@ window.onclick = function(event) {
     popup.style.display = 'none';
   }
 };
+
+
+// 메뉴 열고 닫기 함수
+function toggleMenu() {
+  var navbar = document.getElementById("navbar");
+  var links = navbar.getElementsByTagName("a");
+
+  for (var i = 0; i < links.length; i++) {
+    links[i].classList.toggle("active");
+  }
+}
