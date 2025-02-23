@@ -392,60 +392,70 @@ footer .text-center {
     .product-price {
         font-size: 0.9rem; /* 모바일에서 가격 텍스트 크기 조정 */
     }
-
-    .product-description {
-        font-size: 0.8rem; /* 모바일에서 설명 텍스트 크기 더 줄임 */
-    }
 }
 
-
-  .goods-container {
+.goods-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* 아이템 간격 */
-}
-
-.goods-row {
+    justify-content: center;
+  }
+  
+  .goods-row {
     display: flex;
-    flex: 1 1 100%; /* 각 행을 100% 크기 차지하도록 */
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-}
-
-.goods-item {
-    width: 33.33%; /* 한 줄에 3개의 항목 */
-    padding: 10px;
-}
-
-.goods-card {
-    width: 50%; /* 카드의 크기를 반으로 줄입니다 */
+  }
+  
+  .goods-item {
+    width: 25%; /* 한 줄에 3개의 항목 */
+    margin: 30px; /* 카드 간 아래 여백 */
+    padding: 30px;
+  }
+  
+  .goods-card {
+    width: 60%;
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 10% auto; /* 카드 중앙 정렬 */
-}
-
-.goods-img-top {
-    width: 100%; /* 이미지를 카드 안에 꽉 차게 만듭니다 */
+    margin: 20px 100px;
+    padding: 20px 20px;
+  }
+  
+  .goods-img-top {
+    width: 100%;
     height: auto;
-}
-
-.goods-card-body {
-    padding: 15px;
+    object-fit: cover; /* 이미지를 카드 안에 꽉 차게 만듦 */
+  }
+  
+  .goods-card-body {
+    padding: 10px;
     text-align: center;
-}
-
-.goods-price {
+  }
+  
+  .goods-price {
     font-size: 16px;
     font-weight: bold;
-}
-
-.goods-description {
+  }
+  
+  .goods-description {
     font-size: 14px;
     color: #555;
-}
-
+  }
+  
+  @media (max-width: 768px) {
+    .goods-item {
+      width: 48%; /* 작은 화면에서 두 개씩 표시 */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .goods-item {
+      width: 100%; /* 모바일 화면에서 카드가 한 줄에 하나씩 표시 */
+    }
+  }
+  
 
 .ramen-container {
     display: flex;
@@ -497,6 +507,7 @@ footer .text-center {
     gap: 10px;
     justify-content: space-between;
     width: 100%;
+    object-fit: cover;
 }
 
 .ramen-img-small {

@@ -15,10 +15,12 @@ closePopupBtn.onclick = function() {
 
 // 팝업 외부 클릭 시 팝업 닫기
 window.onclick = function(event) {
-  if (event.target === popup) {
+  // 팝업 외부(배경 부분) 클릭 시에만 팝업을 닫음
+  if (popup && event.target === popup) {
     popup.style.display = 'none';
   }
 };
+
 
 // 메뉴 열고 닫기 함수 (필요 없으면 삭제 가능)
 function toggleMenu() {
